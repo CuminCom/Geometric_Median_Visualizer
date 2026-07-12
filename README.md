@@ -1,24 +1,22 @@
 # 几何中位数可视化工具 (Geometric Median Visualizer)
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.5%2B-orange)](https://matplotlib.org/)
-[![Tkinter](https://img.shields.io/badge/Tkinter-Standard-green)](https://docs.python.org/3/library/tkinter.html)
+[![GitHub release](https://img.shields.io/github/v/release/你的用户名/仓库名)](https://github.com/你的用户名/仓库名/releases/latest)
+[![Windows](https://img.shields.io/badge/Windows-7%2B-blue)](https://github.com/你的用户名/仓库名/releases)
 
-一个**高性能、交互式**的几何中位数可视化桌面程序，支持点集编辑、拖拽平移、缩放、撤销/重做、数据导入导出，并采用高精度 Weiszfeld 算法计算几何中位数。  
-**特色**：完美跟随鼠标的视图平移，无抖动、无延迟，极致流畅。
+**一个高性能、交互式的几何中位数可视化桌面程序**，让你直观地探索“几何中位数”这一重要统计量。支持点集编辑、拖拽平移、缩放、撤销/重做、数据导入导出，并采用高精度 Weiszfeld 算法计算几何中位数。**特色**：完美跟随鼠标的视图平移，无抖动、无延迟，极致流畅。
 
 ---
 
-## ✨ 功能特性
+## ✨ 功能亮点
 
 - **交互式点编辑**  
   - 打点模式：左键单击添加点，按住 `Shift` 连续添加  
-  - 选择模式：单击选中/拖拽移动点，`Ctrl+单击` 多选，框选（拖拽空白区域）  
-  - 平移模式：左键/右键拖拽平移视图（**完美跟随**，无滞后无抖动）
+  - 选择模式：单击选中/拖拽移动点，`Ctrl+单击` 多选，框选
+  - 平移模式：左键/右键拖拽平移视图
 
 - **高性能渲染**  
-  - 基于像素坐标的增量平移算法，鼠标与视图完全同步  
-  - 同步绘制 + 60 FPS 节流，低速拖动依然丝滑  
+  - 基于像素坐标的增量平移，鼠标与视图完全同步  
+  - 同步绘制 + 智能节流，低速拖动依然丝滑  
   - 视图变化阈值过滤，避免无用刷新
 
 - **高精度算法**  
@@ -43,25 +41,19 @@
 
 ---
 
-## 📦 安装与运行
+## 📦 下载与运行
 
-### 环境要求
-- Python 3.8 或更高版本
-- 依赖库：`numpy`, `matplotlib`
+### 免安装版（推荐）
+前往 **[Releases 页面](https://github.com/你的用户名/仓库名/releases)**，下载最新版本的 `GeometricMedian.exe`。  
+**双击即可运行**，无需安装 Python 或任何依赖，适用于 Windows 7/10/11。
 
-### 安装步骤
+### 从源码运行（开发者）
+如果你希望定制或二次开发，可克隆本仓库：
 ```bash
-# 克隆仓库
-git clone https://github.com/your-username/geometric-median-visualizer.git
-cd geometric-median-visualizer
-
-# 安装依赖（推荐使用虚拟环境）
-pip install -r requirements.txt   # 或手动安装 numpy matplotlib
-```
-
-### 运行
-```bash
-python main.py
+git clone https://github.com/你的用户名/仓库名.git
+cd 仓库名
+pip install -r requirements.txt
+python GeometricMedianVisualizer.py
 ```
 
 ---
@@ -70,7 +62,7 @@ python main.py
 
 ### 模式切换（快捷键）
 - `1` – **打点模式**：左键单击添加点；按住 `Shift` 可连续添加  
-- `2` – **平移模式**：左键/右键拖拽平移视图  
+- `2` – **平移模式**：左键/右键拖拽平移视图（完美跟随）  
 - `3` – **选择模式**：左键单击选中点（拖拽移动），`Ctrl+单击` 多选，框选（拖拽空白区域），`Delete` 键删除选中点
 
 ### 通用操作
@@ -90,7 +82,7 @@ python main.py
 
 ---
 
-## 🧠 算法说明
+## 🧠 算法简介
 
 **几何中位数**（Geometric Median）是使到所有数据点欧氏距离之和最小的点，其求解采用 **Weiszfeld 迭代算法**：
 
@@ -136,16 +128,6 @@ x, y
 
 ---
 
-## 📋 依赖项
-
-- Python 3.8+
-- [NumPy](https://numpy.org/) – 数值计算
-- [Matplotlib](https://matplotlib.org/) – 绘图与交互
-
-所有依赖可通过 `pip install -r requirements.txt` 一键安装。
-
----
-
 ## 🤝 贡献与致谢
 
 - **开发辅助**：本项目在开发过程中广泛使用了 **DeepSeek** 人工智能助手进行代码优化、性能调优和文档撰写。
@@ -159,4 +141,4 @@ x, y
 
 ---
 
-**Enjoy!** 如果觉得有用，记得给个 ⭐ 支持一下～
+**Enjoy！** 如果觉得有用，记得给个 ⭐ 支持一下～
