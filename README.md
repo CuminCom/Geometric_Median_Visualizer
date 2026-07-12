@@ -1,7 +1,7 @@
 # 几何中位数可视化工具 (Geometric Median Visualizer)
 
-[![GitHub release](https://img.shields.io/github/v/release/你的用户名/仓库名)](https://github.com/你的用户名/仓库名/releases/latest)
-[![Windows](https://img.shields.io/badge/Windows-7%2B-blue)](https://github.com/你的用户名/仓库名/releases)
+[![GitHub release](https://img.shields.io/github/v/release/CuminCom/Geometric_Median_Visualizer)](https://github.com/CuminCom/Geometric_Median_Visualizer/releases/latest)
+[![Windows](https://img.shields.io/badge/Windows-7%2B-blue)](https://github.com/CuminCom/Geometric_Median_Visualizer/releases)
 
 **一个高性能、交互式的几何中位数可视化桌面程序**，让你直观地探索“几何中位数”这一重要统计量。支持点集编辑、拖拽平移、缩放、撤销/重做、数据导入导出，并采用高精度 Weiszfeld 算法计算几何中位数。**特色**：完美跟随鼠标的视图平移，无抖动、无延迟，极致流畅。
 
